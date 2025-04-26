@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f4f0;
+  color: #333;
+}
+
+header {
+  background-color: #6b4f3b;
+  color: white;
+  padding: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  height: 70px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background-color: #8d6e58;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url("images/backgroundCoffee.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 6px black;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.content {
+  padding: 30px 20px 20px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.content h2{
+  margin: 0 0 15px 0;
+}
+
+img {
+  height: 150px;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 5px 0 0 0 ;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.cafePage {
+  display: none;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #fdfaf6;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.cafePage img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+#cafeNome {
+  color: #3e2f24;
+  margin-bottom: 10px;
+}
+
+#cafeDesc {
+  color: #5c5049;
+  margin: 0 auto 20px auto;
+  max-width: 80%;
+}
+
+#cafePreco {
+  font-size: 1.4rem;
+  color: #6b4f3b;
+  margin-bottom: 20px;
+}
+
+.botaoVoltar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6b4f3b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.botaoVoltar:hover {
+  background-color: #593f2e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  background-color: #6b4f3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

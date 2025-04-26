@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Serra Gaúcha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="start">
+        <h1>Café Serra Gaúcha</h1>
+        <p>Seu refúgio com o melhor café da serra</p>
+      </div>
+      <img src="images/coffee-bean.png" alt="" srcset="" />
+    </header>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero">
+      <div>Bem-vindo ao Café Serra Gaúcha</div>
+    </div>
+
+    <section class="content" id="sobre">
+      <h2>Sobre nós</h2>
+      <p style="max-width: 700px; text-align: center;">
+        Inspirado nas paisagens e tradições da serra gaúcha, servimos cafés com
+        alma, sabor e história. Venha viver essa experiência! Nossa missão é
+        mais do que servir bebidas: queremos criar momentos. Da primeira xícara
+        da manhã às conversas que se estendem pela tarde, cada gole carrega
+        cuidado, tradição e um toque de carinho.
+      </p>
+    </section>
+
+    <section class="content" id="menu">
+      <h2>Nosso Menu</h2>
+      <div class="menu">
+        <div class="item" onclick="mostrarCafe('caseiro')">
+          <h3>Café Caseiro</h3>
+          <img src="images/caseiro.png" alt="" srcset="" />
+          <p>Sabor tradicional que aquece o coração.</p>
+        </div>
+        <div class="item" onclick="mostrarCafe('italiano')">
+          <h3>Café Italiano</h3>
+          <img src="images/italiano.jpg" alt="" srcset="" />
+          <p>Forte, marcante e com personalidade.</p>
+        </div>
+        <div class="item" onclick="mostrarCafe('cappuccino')">
+          <h3>Cappuccino</h3>
+          <img src="images/Cappucino.jpg" alt="" srcset="" />
+          <p>Perfeito equilíbrio entre café, leite e cremosidade.</p>
+        </div>
+        <div class="item" onclick="mostrarCafe('extraForte')">
+          <h3>Extra-Forte</h3>
+          <img src="images/cafe-extra.jpg" alt="" srcset="" />
+          <p>Para quem gosta de intensidade e energia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cafePage" id="cafePage">
+      <img id="cafeImg" src="" alt="Café" />
+      <h2 id="cafeNome"></h2>
+      <p id="cafeDesc" style="max-width: 50%; text-align: center;"></p>
+      <h3 id="cafePreco"></h3>
+      <a href="#menu" class="botaoVoltar" onclick="voltar()">Voltar ao menu</a>
+    </section>
+
+    <section class="content" id="contato">
+      <h2>Contato</h2>
+      <p>Email: contato@cafeserragaucha.com.br</p>
+      <p>Telefone: (54) 1234-5678</p>
+      <p>Endereço: Av. da Serra, 456 - Gramado, RS</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Café Serra Gaúcha. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
